@@ -1,24 +1,24 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "TheMealDb",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/logo2.svg",
+    "light": "/logo/logo2.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#d57d1f",
+    "light": "#d57d1f",
+    "dark": "#d57d1f",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#d57d1f",
+      "to": "#d58d1f"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "thedatadb@gmail.com"
     }
   ],
   "topbarCtaButton": {
@@ -33,19 +33,14 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://discord.com/invite/pFvgaXV"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Facebook",
+      "icon": "facebook",
+      "url": "https://www.facebook.com/TheDataDB"
     }
   ],
   "navigation": [
@@ -57,17 +52,7 @@
         "development"
       ]
     },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
+    
     {
       "group": "API Documentation",
       "pages": [
@@ -75,17 +60,20 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Endpoints",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/searchByName",
+        "api-reference/endpoint/listAllMealsByFirstLetter",
+        "api-reference/endpoint/lookupFullMealDetailsById",
+        "api-reference/endpoint/lookupASingleRandomMeal",
+        "api-reference/endpoint/lookupASelectionOf10RandomMeals",
+        "api-reference/endpoint/listAllMealCategories",
+        "api-reference/endpoint/latestMeals"    
+        
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/TheAudioDB"
   }
 }

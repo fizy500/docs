@@ -1,0 +1,33 @@
+---
+title: 'Latest Meals'
+api: 'Get  www.themealdb.com/api/json/v1/1/latest.php'
+description: "This list the latest meals.Only available to Paypal supporters"
+---
+### Body
+
+<RequestExample> 
+```curl curl
+curl --location --request Get 'www.themealdb.com/api/json/v1/1/latest.php'
+```
+```javascript javascript
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+fetch("www.themealdb.com/api/json/v1/1/latest.php", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+</RequestExample>
+
+<ResponseExample>
+```json Response
+{
+     "success":1,
+     "new user":true,
+     "comment" : "I was here before the Dinosaurs"
+}
+
+```
+</ResponseExample>

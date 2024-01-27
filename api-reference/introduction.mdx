@@ -2,32 +2,49 @@
 title: 'Introduction'
 description: 'Example section for showcasing API endpoints'
 ---
+{/* const d = new Date();
+let year = d.getFullYear(); */}
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+Our Api provides 14 endpoints where you can access our comprehensive lists of meals.
+For reference,these is a list of our Api endpoints at a glance 
 
-## Welcome
+Search meal by name
+List all meals by first letter 
+Lookup full meal details by id
+Lookup a single random meal
+- Lookup a selection of 10 random meals (only available to Paypal supporters)
+- List all meal categories
+- Latest Meals (only available to Paypal supporters)
+- List all Categories, Area, Ingredients
+- Filter by main ingredient
+- Filter by multi-ingredient (only available to Paypal supporters)
+- Filter by Category
+- Filter by Area
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+Images
+Meal Thumbnail Images
+Add /preview to the end of the meal image URL
+/images/media/meals/llcbn01574260722.jpg/preview
 
-## Authentication
+Ingredient Thumbnail Images
+www.themealdb.com/images/ingredients/Lime.png
+www.themealdb.com/images/ingredients/Lime-Small.png
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+## Free Recipe API Support
+
+The API and site will always remain free at point of access.
+If you love our service and want extra features you can sign up as a Paypal supporter.
+You can cancel anytime. This allows us to pay for the servers and bandwidth and develop new features.
+
+## Test API Keys
+You can use the test API key "1" during development of your app or for educational use (see test links below).
+However you must become a supporter if releasing publicly on an appstore.
+All data is returned in JSON format. We recomend Json view chrome extension to view the data in your web browser.
+
+## API Production Key Upgrade
+All supporters have access to the beta version of the API which allows mutiple ingredient filters.
+You also get access to adding your own meals and images. You can also list the full database rather than limited to 100 items.
+Please sign up on Paypal and we will email you the upgrade.
+
