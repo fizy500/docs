@@ -1,0 +1,54 @@
+---
+title: 'Search meal by name'
+api: 'Get https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata'
+description: 'This endpoint searches for a meal by name.'
+---
+
+
+<RequestExample>
+```javascript javascript
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://www.themealdb.com/api/json/v1/1/search.php", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+```kotlin kotlin
+val client = OkHttpClient()
+val request = Request.Builder()
+  .url("https://www.themealdb.com/api/json/v1/1/search.php")
+  .build()
+val response = client.newCall(request).execute()
+```
+```swift swift
+var request = URLRequest(url: URL(string: "https://www.themealdb.com/api/json/v1/1/search.php")!,timeoutInterval: Double.infinity)
+request.httpMethod = "GET"
+
+let task = URLSession.shared.dataTask(with: request) { data, response, error in 
+  guard let data = data else {
+    print(String(describing: error))
+    return
+  }
+  print(String(data: data, encoding: .utf8)!)
+}
+
+task.resume()
+
+```
+```java java
+OkHttpClient client = new OkHttpClient().newBuilder()
+  .build();
+MediaType mediaType = MediaType.parse("text/plain");
+RequestBody body = RequestBody.create(mediaType, "");
+Request request = new Request.Builder()
+  .url("https://www.themealdb.com/api/json/v1/1/search.php")
+  .method("GET", body)
+  .build();
+Response response = client.newCall(request).execute();
+```
+</RequestExample>

@@ -1,5 +1,4 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
   "name": "TheMealDb",
   "logo": {
     "dark": "/logo/logo2.svg",
@@ -18,13 +17,9 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "thedatadb@gmail.com"
+      "url": "https://www.paypal.com/webapps/hermes?token=5HY35174TB0363318&useraction=commit"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
   "tabs": [
     {
       "name": "API Reference",
@@ -48,8 +43,7 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "quickstart"
       ]
     },
     
@@ -60,20 +54,30 @@
       ]
     },
     {
-      "group": "Endpoints",
+      "group": "Free endpoints",
       "pages": [
-        "api-reference/endpoint/searchByName",
-        "api-reference/endpoint/listAllMealsByFirstLetter",
-        "api-reference/endpoint/lookupFullMealDetailsById",
-        "api-reference/endpoint/lookupASingleRandomMeal",
-        "api-reference/endpoint/lookupASelectionOf10RandomMeals",
-        "api-reference/endpoint/listAllMealCategories",
-        "api-reference/endpoint/latestMeals"    
-        
+        "api-reference/Free endpoints/searchByName",
+        "api-reference/Free endpoints/listAllMealsByFirstLetter",
+        "api-reference/Free endpoints/lookupFullMealDetailsById",
+        "api-reference/Free endpoints/lookupASingleRandomMeal",
+        "api-reference/Free endpoints/listAllMealCategories",
+        "api-reference/Free endpoints/filterByCategory"  
+      ]
+    },
+    {
+      "group": "Paid endpoints",
+      "pages": [
+        "api-reference/Paid endpoints/lookupASelectionOf10RandomMeals",
+        "api-reference/Paid endpoints/latestMeals",
+        "api-reference/Paid endpoints/filterByMultiIngredient" 
       ]
     }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/TheAudioDB"
+  },
+  "seo": {
+    "indexHiddenPages": true
   }
+  
 }

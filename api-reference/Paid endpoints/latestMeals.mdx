@@ -1,6 +1,6 @@
 ---
 title: 'Latest Meals'
-api: 'Get  www.themealdb.com/api/json/v1/1/latest.php'
+api: 'Get  https://www.themealdb.com/api/json/v1/1/latest.php'
 description: "This list the latest meals.Only available to Paypal supporters"
 ---
 ### Body
@@ -23,11 +23,7 @@ fetch("www.themealdb.com/api/json/v1/1/latest.php", requestOptions)
 
 <ResponseExample>
 ```json Response
-{
-     "success":1,
-     "new user":true,
-     "comment" : "I was here before the Dinosaurs"
-}
+{"meals":{"idMeal":"1","strMeal":"Only For Patreon supporters sorry","strDescription":"Sign up here: https:\/\/www.patreon.com\/thedatadb"}}
 
 ```
 </ResponseExample>
