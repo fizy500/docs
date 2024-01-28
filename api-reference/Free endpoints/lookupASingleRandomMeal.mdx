@@ -3,10 +3,170 @@ title: 'Lookup a single random meal'
 api: 'Get https://www.themealdb.com/api/json/v1/1/random.php'
 description: "This looks up a single random meal"
 ---
-### Body
+Endpoint:
+
+`https://www.themealdb.com/api/json/v1/1/random.php`
+
+
+Request Example:
+
+`https://www.themealdb.com/api/json/v1/1/random.php`
+
+
 <ResponseExample>
 ```json Response
-{"meals":[{"idMeal":"52871","strMeal":"Yaki Udon","strDrinkAlternate":null,"strCategory":"Vegetarian","strArea":"Japanese","strInstructions":"Boil some water in a large saucepan. Add 250ml cold water and the udon noodles. (As they are so thick, adding cold water helps them to cook a little bit slower so the middle cooks through). If using frozen or fresh noodles, cook for 2 mins or until al dente; dried will take longer, about 5-6 mins. Drain and leave in the colander.\r\nHeat 1 tbsp of the oil, add the onion and cabbage and saut\u00e9 for 5 mins until softened. Add the mushrooms and some spring onions, and saut\u00e9 for 1 more min. Pour in the remaining sesame oil and the noodles. If using cold noodles, let them heat through before adding the ingredients for the sauce \u2013 otherwise tip in straight away and keep stir-frying until sticky and piping hot. Sprinkle with the remaining spring onions.","strMealThumb":"https:\/\/www.themealdb.com\/images\/media\/meals\/wrustq1511475474.jpg","strTags":"LowCalorie","strYoutube":"https:\/\/www.youtube.com\/watch?v=5Iy0MCowSvA","strIngredient1":"Udon Noodles","strIngredient2":"Sesame Seed Oil","strIngredient3":"Onion","strIngredient4":"Cabbage","strIngredient5":"Shiitake Mushrooms","strIngredient6":"Spring Onions","strIngredient7":"Mirin","strIngredient8":"Soy Sauce","strIngredient9":"Caster Sugar","strIngredient10":"Worcestershire Sauce","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strIngredient16":"","strIngredient17":"","strIngredient18":"","strIngredient19":"","strIngredient20":"","strMeasure1":"250g","strMeasure2":"2 tbs","strMeasure3":"1 sliced","strMeasure4":"0.25","strMeasure5":"10","strMeasure6":"4","strMeasure7":"4 tbsp","strMeasure8":"2 tbs","strMeasure9":"1 tblsp ","strMeasure10":"1 tblsp ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","strMeasure16":"","strMeasure17":"","strMeasure18":"","strMeasure19":"","strMeasure20":"","strSource":"https:\/\/www.bbcgoodfood.com\/recipes\/yaki-udon","strImageSource":null,"strCreativeCommonsConfirmed":null,"dateModified":null}]}
-
+{
+  "meals": [
+    {
+      "idMeal": "52928",
+      "strMeal": "BeaverTails",
+      "strDrinkAlternate": null,
+      "strCategory": "Dessert",
+      "strArea": "Canadian",
+      "strInstructions": "In the bowl of a stand mixer, add warm water, a big pinch of sugar and yeast. Allow to sit until frothy.\r\nInto the same bowl, add 1/2 cup sugar, warm milk, melted butter, eggs and salt, and whisk until combined.\r\nPlace a dough hook on the mixer, add the flour with the machine on, until a smooth but slightly sticky dough forms.\r\nPlace dough in a bowl, cover with plastic wrap, and allow to proof for 1 1/2 hours.\r\nCut dough into 12 pieces, and roll out into long oval-like shapes about 1/4 inch thick that resemble a beaver’s tail.\r\nIn a large, deep pot, heat oil to 350 degrees. Gently place beavertail dough into hot oil and cook for 30 to 45 seconds on each side until golden brown.\r\nDrain on paper towels, and garnish as desired. Toss in cinnamon sugar, in white sugar with a squeeze of lemon, or with a generous slathering of Nutella and a handful of toasted almonds. Enjoy!",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg",
+      "strTags": "Treat,Pudding,Speciality",
+      "strYoutube": "https://www.youtube.com/watch?v=2G07UOqU2e8",
+      "strIngredient1": "Water",
+      "strIngredient2": "Yeast",
+      "strIngredient3": "Sugar",
+      "strIngredient4": "Milk",
+      "strIngredient5": "Butter",
+      "strIngredient6": "Eggs",
+      "strIngredient7": "Salt",
+      "strIngredient8": "Flour",
+      "strIngredient9": "Oil",
+      "strIngredient10": "Lemon",
+      "strIngredient11": "Sugar",
+      "strIngredient12": "Cinnamon",
+      "strIngredient13": "",
+      "strIngredient14": "",
+      "strIngredient15": "",
+      "strIngredient16": "",
+      "strIngredient17": "",
+      "strIngredient18": "",
+      "strIngredient19": "",
+      "strIngredient20": "",
+      "strMeasure1": "1/2 cup ",
+      "strMeasure2": "2 parts ",
+      "strMeasure3": "1/2 cup ",
+      "strMeasure4": "1/2 cup ",
+      "strMeasure5": "6 tblsp",
+      "strMeasure6": "2",
+      "strMeasure7": "1 ½ tsp",
+      "strMeasure8": "2-1/2 cups",
+      "strMeasure9": "for frying",
+      "strMeasure10": "garnish",
+      "strMeasure11": "garnish",
+      "strMeasure12": "garnish",
+      "strMeasure13": "",
+      "strMeasure14": "",
+      "strMeasure15": "",
+      "strMeasure16": "",
+      "strMeasure17": "",
+      "strMeasure18": "",
+      "strMeasure19": "",
+      "strMeasure20": "",
+      "strSource": "https://www.tastemade.com/videos/beavertails",
+      "strImageSource": null,
+      "strCreativeCommonsConfirmed": null,
+      "dateModified": null
+    }
+  ]
+}
 ```
 </ResponseExample>
+
+
+<table className="table-auto w-full  border-orange-500">
+    <thead>
+      <tr>
+        <th class="borde p-2">Attribute</th>
+        <th class="borde p-2">Description</th>
+        <th class="borde p-2">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">idMeal</td>
+        <td class="border border-orange-500 p-2">The ID of a meal.Usually an integer</td>
+        <td class="border border-orange-500 p-2">52871</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strMeal</td>
+        <td class="border border-orange-500 p-2">Name of meal</td>
+        <td class="border border-orange-500 p-2">Yaki Udon</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strDrinkAlternate</td>
+        <td class="border border-orange-500 p-2">Drink alternate</td>
+        <td class="border border-orange-500 p-2"></td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strcategory</td>
+        <td class="border border-orange-500 p-2">Category of meal</td>
+        <td class="border border-orange-500 p-2">Vegetarian</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strArea</td>
+        <td class="border border-orange-500 p-2">Location of origin</td>
+        <td class="border border-orange-500 p-2">Japanese</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strInstructions		</td>
+        <td class="border border-orange-500 p-2">How to prepare it</td>
+        <td class="border border-orange-500 p-2">Detailed step by step guide</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strMealThumb</td>
+        <td class="border border-orange-500 p-2">Image of the meal</td>
+        <td class="border border-orange-500 p-2">A link to the image</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strTags</td>
+        <td class="border border-orange-500 p-2">Tags for the meal</td>
+        <td class="border border-orange-500 p-2">LowCalorie</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strYouTube		</td>
+        <td class="border border-orange-500 p-2">Learn how to prepare it by watching YouTube video</td>
+        <td class="border border-orange-500 p-2">A link to the video</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strIngredient</td>
+        <td class="border border-orange-500 p-2">List of ingredients for the meal by number</td>
+        <td class="border border-orange-500 p-2">Udon Noodles</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strMeasure		</td>
+        <td class="border border-orange-500 p-2">Measurement of each ingredient</td>
+        <td class="border border-orange-500 p-2">1tbsp</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strSource			</td>
+        <td class="border border-orange-500 p-2">True</td>
+        <td class="border border-orange-500 p-2"></td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strImageSource		</td>
+        <td class="border border-orange-500 p-2">Where the image was gotten from</td>
+        <td class="border border-orange-500 p-2"></td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border  p-2">strCreativeCommonsConfirmed		</td>
+        <td class="border  p-2">Creative commons	</td>
+        <td class="border  p-2">null</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border  p-2">datemodified</td>
+        <td class="border  p-2">Date the meal was modified on the API		</td>
+        <td class="border  p-2">null</td>
+      </tr>
+    </tbody>
+  </table>

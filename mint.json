@@ -71,6 +71,13 @@
         "api-reference/Paid endpoints/latestMeals",
         "api-reference/Paid endpoints/filterByMultiIngredient" 
       ]
+    },
+    {
+      "group": "Image endpoints",
+      "pages": [
+        "api-reference/Image endpoints/mealThumbnailImages",
+        "api-reference/Image endpoints/ingredientThumbnailImages"
+      ]
     }
   ],
   "footerSocials": {

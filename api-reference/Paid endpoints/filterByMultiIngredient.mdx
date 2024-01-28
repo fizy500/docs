@@ -1,13 +1,12 @@
 ---
 title: 'Filter by multi-ingredient'
 api: 'Get  https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast,garlic,salt'
-description: "This filters the result from multi-ingredient.Only available to Paypal supporters"
+description: "This filters meals result by multi-ingredient.Only available to Paypal supporters"
 ---
-### Body
 
-
-<RequestExample> 
+<RequestExample>
 ```curl 
-curl --location --request Get 'www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast,garlic,salt'
+curl --location --request Get 'https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast,garlic,salt'
+
 ```
 </RequestExample>

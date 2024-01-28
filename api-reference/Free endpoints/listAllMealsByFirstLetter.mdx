@@ -1,24 +1,182 @@
 ---
 title: 'List all meals by first letter'
-api: 'Get  https://www.themealdb.com/api/json/v1/1/search.php?f=a'
-description: "This is a placeholder text"
+api: 'Get https://www.themealdb.com/api/json/v1/1/search.php?f=a'
+description: "This returns all meals according to a particular letter"
 ---
-### Body
-
-<ParamField body="properties" type="object">lorem20 </ParamField>
-<ResponseField name="success" type="object">Indicates whether the Api call was successful </ResponseField>
 
 
-<RequestExample> 
+Endpoint:
+
+`https://www.themealdb.com/api/json/v1/1/search.php?f={first letter of meal}`
+
+Replace first letter of meal with the letter of your choice
+
+Request Example:
+
+ `https://www.themealdb.com/api/json/v1/1/search.php?f=b`
+
+<RequestExample>
 ```curl 
-curl --location --request Get 'www.themealdb.com/api/json/v1/1/search.php?f=a' \
+curl --location --request Get 'www.themealdb.com/api/json/v1/1/search.php?f=y'
 ```
 </RequestExample>
 <ResponseExample>
-```json Response
-
-
+```json Example Response
+{
+  "meals": [
+    {
+      "idMeal": "52871",
+      "strMeal": "Yaki Udon",
+      "strDrinkAlternate": null,
+      "strCategory": "Vegetarian",
+      "strArea": "Japanese",
+      "strInstructions": "Boil some water in a large saucepan. Add 250ml cold water and the udon noodles. (As they are so thick, adding cold water helps them to cook a little bit slower so the middle cooks through). If using frozen or fresh noodles, cook for 2 mins or until al dente; dried will take longer, about 5-6 mins. Drain and leave in the colander.\r\nHeat 1 tbsp of the oil, add the onion and cabbage and sauté for 5 mins until softened. Add the mushrooms and some spring onions, and sauté for 1 more min. Pour in the remaining sesame oil and the noodles. If using cold noodles, let them heat through before adding the ingredients for the sauce – otherwise tip in straight away and keep stir-frying until sticky and piping hot. Sprinkle with the remaining spring onions.",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/wrustq1511475474.jpg",
+      "strTags": "LowCalorie",
+      "strYoutube": "https://www.youtube.com/watch?v=5Iy0MCowSvA",
+      "strIngredient1": "Udon Noodles",
+      "strIngredient2": "Sesame Seed Oil",
+      "strIngredient3": "Onion",
+      "strIngredient4": "Cabbage",
+      "strIngredient5": "Shiitake Mushrooms",
+      "strIngredient6": "Spring Onions",
+      "strIngredient7": "Mirin",
+      "strIngredient8": "Soy Sauce",
+      "strIngredient9": "Caster Sugar",
+      "strIngredient10": "Worcestershire Sauce",
+      "strIngredient11": "",
+      "strIngredient12": "",
+      "strIngredient13": "",
+      "strIngredient14": "",
+      "strIngredient15": "",
+      "strIngredient16": "",
+      "strIngredient17": "",
+      "strIngredient18": "",
+      "strIngredient19": "",
+      "strIngredient20": "",
+      "strMeasure1": "250g",
+      "strMeasure2": "2 tbs",
+      "strMeasure3": "1 sliced",
+      "strMeasure4": "0.25",
+      "strMeasure5": "10",
+      "strMeasure6": "4",
+      "strMeasure7": "4 tbsp",
+      "strMeasure8": "2 tbs",
+      "strMeasure9": "1 tblsp ",
+      "strMeasure10": "1 tblsp ",
+      "strMeasure11": "",
+      "strMeasure12": "",
+      "strMeasure13": "",
+      "strMeasure14": "",
+      "strMeasure15": "",
+      "strMeasure16": "",
+      "strMeasure17": "",
+      "strMeasure18": "",
+      "strMeasure19": "",
+      "strMeasure20": "",
+      "strSource": "https://www.bbcgoodfood.com/recipes/yaki-udon",
+      "strImageSource": null,
+      "strCreativeCommonsConfirmed": null,
+      "dateModified": null
+    }
+  ]
+}
 ```
 </ResponseExample>
+
+
+
+<table className="table-auto w-full  border-orange-500">
+    <thead>
+      <tr>
+        <th class="borde p-2">Attribute</th>
+        <th class="borde p-2">Description</th>
+        <th class="borde p-2">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">idMeal</td>
+        <td class="border border-orange-500 p-2">The ID of a meal.Usually an integer</td>
+        <td class="border border-orange-500 p-2">52871</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strMeal</td>
+        <td class="border border-orange-500 p-2">Name of meal</td>
+        <td class="border border-orange-500 p-2">Yaki Udon</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strDrinkAlternate</td>
+        <td class="border border-orange-500 p-2">Drink alternate</td>
+        <td class="border border-orange-500 p-2"></td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strcategory</td>
+        <td class="border border-orange-500 p-2">Category of meal</td>
+        <td class="border border-orange-500 p-2">Vegetarian</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strArea</td>
+        <td class="border border-orange-500 p-2">Location of origin</td>
+        <td class="border border-orange-500 p-2">Japanese</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strInstructions		</td>
+        <td class="border border-orange-500 p-2">How to prepare it</td>
+        <td class="border border-orange-500 p-2">Detailed step by step guide</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strMealThumb</td>
+        <td class="border border-orange-500 p-2">Image of the meal</td>
+        <td class="border border-orange-500 p-2">A link to the image</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strTags</td>
+        <td class="border border-orange-500 p-2">Tags for the meal</td>
+        <td class="border border-orange-500 p-2">LowCalorie</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strYouTube		</td>
+        <td class="border border-orange-500 p-2">Learn how to prepare it by watching YouTube video</td>
+        <td class="border border-orange-500 p-2">A link to the video</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strIngredient</td>
+        <td class="border border-orange-500 p-2">List of ingredients for the meal by number</td>
+        <td class="border border-orange-500 p-2">Udon Noodles</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strMeasure		</td>
+        <td class="border border-orange-500 p-2">Measurement of each ingredient</td>
+        <td class="border border-orange-500 p-2">1tbsp</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strSource			</td>
+        <td class="border border-orange-500 p-2">True</td>
+        <td class="border border-orange-500 p-2"></td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strImageSource		</td>
+        <td class="border border-orange-500 p-2">Where the image was gotten from</td>
+        <td class="border border-orange-500 p-2"><a href="https://www.bbcgoodfood.com/recipes/yaki-udon">https://www.bbcgoodfood.com/recipes/yaki-udon </a> </td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border  p-2">strCreativeCommonsConfirmed		</td>
+        <td class="border  p-2">Creative commons	</td>
+        <td class="border  p-2">null</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border  p-2">datemodified		</td>
+        <td class="border  p-2">Date the meal was modified on the API		</td>
+        <td class="border  p-2">null</td>
+      </tr>
+    </tbody>
+  </table>
 
 

@@ -4,15 +4,129 @@ api: 'Get https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata'
 description: 'This endpoint searches for a meal by name.'
 ---
 
+{/* ### Body */}
+
+Endpoint:
+
+`Get www.themealdb.com/api/json/v1/1/search.php?s={name of meal} `
+
+Replace name of meal with the meal of your choice
+
+Request Example:
+
+`Get https://www.themealdb.com/api/json/v1/1/search.php?s=Spicy%20Arrabiata%20Penne `
+
+
+### Attributes
+
+<table className="table-auto w-full  border-orange-500">
+    <thead>
+      <tr>
+        <th class="borde p-2">Attribute</th>
+        <th class="borde p-2">Description</th>
+        <th class="borde p-2">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">idMeal</td>
+        <td class="border border-orange-500 p-2">The ID of a meal.Usually an integer</td>
+        <td class="border border-orange-500 p-2">52771</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strMeal</td>
+        <td class="border border-orange-500 p-2">Name of meal</td>
+        <td class="border border-orange-500 p-2">Spicy Arrabiata Penne</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strDrinkAlternative</td>
+        <td class="border border-orange-500 p-2">Drink alternative</td>
+        <td class="border border-orange-500 p-2"></td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strcategory</td>
+        <td class="border border-orange-500 p-2">Category of meal</td>
+        <td class="border border-orange-500 p-2">Vegetarian</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strArea</td>
+        <td class="border border-orange-500 p-2">Location of origin</td>
+        <td class="border border-orange-500 p-2">Italian</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strInstructions		</td>
+        <td class="border border-orange-500 p-2">How to prepare it</td>
+        <td class="border border-orange-500 p-2">Detailed step by step guide</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strMealThumb</td>
+        <td class="border border-orange-500 p-2">Image of the meal</td>
+        <td class="border border-orange-500 p-2">A link to the image</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strTags</td>
+        <td class="border border-orange-500 p-2">Tags for the meal</td>
+        <td class="border border-orange-500 p-2">Pasta</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strYouTube		</td>
+        <td class="border border-orange-500 p-2">Learn how to prepare it by watching YouTube video</td>
+        <td class="border border-orange-500 p-2">A link to the video</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strIngredient</td>
+        <td class="border border-orange-500 p-2">List of ingredients for the meal by number</td>
+        <td class="border border-orange-500 p-2">penne rigate</td>
+      </tr>
+
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strMeasure		</td>
+        <td class="border border-orange-500 p-2">Measurement of each ingredient</td>
+        <td class="border border-orange-500 p-2">1 pound</td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strSource			</td>
+        <td class="border border-orange-500 p-2">True</td>
+        <td class="border border-orange-500 p-2"></td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border border-orange-500 p-2">strImageSource		</td>
+        <td class="border border-orange-500 p-2">Where the image was gotten from</td>
+        <td class="border border-orange-500 p-2"></td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border  p-2">strCreativeCommonsConfirmed		</td>
+        <td class="border  p-2">Creative commons	</td>
+        <td class="border  p-2"></td>
+      </tr>
+      <tr class="bg-orange-200">
+        <td class="border  p-2">datemodified		</td>
+        <td class="border  p-2">Date the meal was modified on the API		</td>
+        <td class="border  p-2"></td>
+      </tr>
+    </tbody>
+  </table>
+
 
 <RequestExample>
+```curl curl
+curl --location 'https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata'
+
+```
+
+
 ```javascript javascript
 var requestOptions = {
   method: 'GET',
   redirect: 'follow'
 };
 
-fetch("https://www.themealdb.com/api/json/v1/1/search.php", requestOptions)
+fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -21,12 +135,12 @@ fetch("https://www.themealdb.com/api/json/v1/1/search.php", requestOptions)
 ```kotlin kotlin
 val client = OkHttpClient()
 val request = Request.Builder()
-  .url("https://www.themealdb.com/api/json/v1/1/search.php")
+  .url("https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata")
   .build()
 val response = client.newCall(request).execute()
 ```
 ```swift swift
-var request = URLRequest(url: URL(string: "https://www.themealdb.com/api/json/v1/1/search.php")!,timeoutInterval: Double.infinity)
+var request = URLRequest(url: URL(string: "https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata")!,timeoutInterval: Double.infinity)
 request.httpMethod = "GET"
 
 let task = URLSession.shared.dataTask(with: request) { data, response, error in 
@@ -46,9 +160,73 @@ OkHttpClient client = new OkHttpClient().newBuilder()
 MediaType mediaType = MediaType.parse("text/plain");
 RequestBody body = RequestBody.create(mediaType, "");
 Request request = new Request.Builder()
-  .url("https://www.themealdb.com/api/json/v1/1/search.php")
+  .url("https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata")
   .method("GET", body)
   .build();
 Response response = client.newCall(request).execute();
 ```
 </RequestExample>
+
+<ResponseExample>
+```json
+{
+  "meals": [
+    {
+      "idMeal": "52771",
+      "strMeal": "Spicy Arrabiata Penne",
+      "strDrinkAlternate": null,
+      "strCategory": "Vegetarian",
+      "strArea": "Italian",
+      "strInstructions": "Bring a large pot of water to a boil. Add kosher salt to the boiling water, then add the pasta. Cook according to the package instructions, about 9 minutes.\r\nIn a large skillet over medium-high heat, add the olive oil and heat until the oil starts to shimmer. Add the garlic and cook, stirring, until fragrant, 1 to 2 minutes. Add the chopped tomatoes, red chile flakes, Italian seasoning and salt and pepper to taste. Bring to a boil and cook for 5 minutes. Remove from the heat and add the chopped basil.\r\nDrain the pasta and add it to the sauce. Garnish with Parmigiano-Reggiano flakes and more basil and serve warm.",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg",
+      "strTags": "Pasta,Curry",
+      "strYoutube": "https://www.youtube.com/watch?v=1IszT_guI08",
+      "strIngredient1": "penne rigate",
+      "strIngredient2": "olive oil",
+      "strIngredient3": "garlic",
+      "strIngredient4": "chopped tomatoes",
+      "strIngredient5": "red chile flakes",
+      "strIngredient6": "italian seasoning",
+      "strIngredient7": "basil",
+      "strIngredient8": "Parmigiano-Reggiano",
+      "strIngredient9": "",
+      "strIngredient10": "",
+      "strIngredient11": "",
+      "strIngredient12": "",
+      "strIngredient13": "",
+      "strIngredient14": "",
+      "strIngredient15": "",
+      "strIngredient16": null,
+      "strIngredient17": null,
+      "strIngredient18": null,
+      "strIngredient19": null,
+      "strIngredient20": null,
+      "strMeasure1": "1 pound",
+      "strMeasure2": "1/4 cup",
+      "strMeasure3": "3 cloves",
+      "strMeasure4": "1 tin ",
+      "strMeasure5": "1/2 teaspoon",
+      "strMeasure6": "1/2 teaspoon",
+      "strMeasure7": "6 leaves",
+      "strMeasure8": "spinkling",
+      "strMeasure9": "",
+      "strMeasure10": "",
+      "strMeasure11": "",
+      "strMeasure12": "",
+      "strMeasure13": "",
+      "strMeasure14": "",
+      "strMeasure15": "",
+      "strMeasure16": null,
+      "strMeasure17": null,
+      "strMeasure18": null,
+      "strMeasure19": null,
+      "strMeasure20": null,
+      "strSource": null,
+      "strImageSource": null,
+      "strCreativeCommonsConfirmed": null,
+      "dateModified": null
+    }
+  ]
+}
+```
+</ResponseExample>
