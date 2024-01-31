@@ -16,7 +16,7 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Upgrade",
       "url": "https://www.paypal.com/webapps/hermes?token=5HY35174TB0363318&useraction=commit"
     }
   ],
@@ -86,5 +86,4 @@
   "seo": {
     "indexHiddenPages": true
   }
-  
 }
